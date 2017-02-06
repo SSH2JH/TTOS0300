@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandBox", "SandBox\SandBox.csproj", "{A698BECF-0EF8-4CB2-B842-7C2BED4ABB8F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Labra9", "Labra9", "{9899721C-EB73-4C25-BED8-6D0F04DF9A25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus1", "Labra9\Harjoitus1\Harjoitus1.csproj", "{B2480D57-B19F-4335-AFF4-4486BA395239}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{A698BECF-0EF8-4CB2-B842-7C2BED4ABB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A698BECF-0EF8-4CB2-B842-7C2BED4ABB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A698BECF-0EF8-4CB2-B842-7C2BED4ABB8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2480D57-B19F-4335-AFF4-4486BA395239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2480D57-B19F-4335-AFF4-4486BA395239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2480D57-B19F-4335-AFF4-4486BA395239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2480D57-B19F-4335-AFF4-4486BA395239}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B2480D57-B19F-4335-AFF4-4486BA395239} = {9899721C-EB73-4C25-BED8-6D0F04DF9A25}
 	EndGlobalSection
 EndGlobal

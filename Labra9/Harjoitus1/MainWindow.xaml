@@ -1,0 +1,16 @@
+﻿<Window x:Class="Harjoitus1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Harjoitus1"
+        mc:Ignorable="d"
+        Title="Harjoitus 1" Height="350" Width="525">
+    <Grid Margin="10,0,3.4,3.8">
+        <Button x:Name="TruckButton" Content="Trucks" HorizontalAlignment="Left" Margin="140,94,0,0" VerticalAlignment="Top" Width="75" Click="truckButton_click"/>
+        <Button x:Name="CarButton" Content="Cars" HorizontalAlignment="Left" Margin="308,94,0,0" VerticalAlignment="Top" Width="75" Click="carbutton_click"/>
+        <TextBlock x:Name="PrintTrucs" HorizontalAlignment="Left" Margin="140,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="75" Text="0"/>
+        <TextBlock x:Name="PrintCars" HorizontalAlignment="Left" Margin="308,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="75" Text="0"/>
+
+    </Grid>
+</Window>
