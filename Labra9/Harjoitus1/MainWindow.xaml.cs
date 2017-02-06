@@ -8,7 +8,7 @@
  *		 Hänen tulee laskea ohi menevät henkilö- ja kuorma-autot. Laadi opiskelijalle sovellus,
  *		 jolla hän voi laskea helposti ohi menneet autot.
  *		 Painikkeita painettaessa ko. kulkuneuvon osoittama lukumäärä kasvaa yhdellä. 
- * Pvm: 31.1.2017
+ * Pvm: 6.2.2017
  */
 
 using System;
