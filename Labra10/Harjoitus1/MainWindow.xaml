@@ -1,0 +1,22 @@
+﻿<Window x:Class="Harjoitus1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Harjoitus1"
+        mc:Ignorable="d"
+        Title="Shopping List" Height="350" Width="300" MinHeight="350" MinWidth="300" MaxHeight="350" MaxWidth="300">
+    <Grid Margin="0,0,3.6,1.8">
+        <Label x:Name="label" Content="Shop Items:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="148" FontWeight="Bold"/>
+        <StackPanel x:Name="ChkList" HorizontalAlignment="Left" Height="92" Margin="10,41,0,0" VerticalAlignment="Top" Width="137">
+            <CheckBox x:Name="chkBoxMilk" Content="Milk"/>
+            <CheckBox x:Name="chkBoxCoffee" Content="Coffee"/>
+            <CheckBox x:Name="chkBoxBeer" Content="Beer"/>
+            <CheckBox x:Name="chkBoxPasta" Content="Pasta"/>
+            <CheckBox x:Name="chkBoxBread" Content="Bread"/>
+        </StackPanel>
+        <Button x:Name="BuyButton" Content="BUY" HorizontalAlignment="Left" Margin="10,138,0,0" VerticalAlignment="Top" Width="137" Height="49" ToolTip="Heck at least one item" Click="BuyButton_Clicked"/>
+        <TextBox x:Name="txtShopListOutput" HorizontalAlignment="Left" Height="106" Margin="10,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" IsEnabled="False" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
