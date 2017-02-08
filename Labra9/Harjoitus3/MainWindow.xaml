@@ -26,7 +26,7 @@
         <Label x:Name="label1" Content="Window heigth" HorizontalAlignment="Left" Margin="205,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label x:Name="label1_Copy" Content="Frame width" HorizontalAlignment="Left" Margin="355,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <TextBox x:Name="Input_wWindow" HorizontalAlignment="Left" Height="41" Margin="39,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="Enter window width in mm"/>
-        <TextBox x:Name="input_hWindow" HorizontalAlignment="Left" Height="41" Margin="193,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="Enter window heigth in mm"/>
+        <TextBox x:Name="input_hWindow" HorizontalAlignment="Left" Height="41" Margin="195,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="Enter window heigth in mm"/>
         <TextBox x:Name="Input_wFrame" HorizontalAlignment="Left" Height="41" Margin="355,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="Enter frame width in mm" Text="45"/>
         <Button x:Name="CalculateArea" Content="Calculate" HorizontalAlignment="Left" Margin="39,160,0,0" VerticalAlignment="Top" Width="436" Height="46" Click="CalculateArea_Click"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="73,230,0,0" TextWrapping="Wrap" Text="Window area" VerticalAlignment="Top" Width="86"/>
