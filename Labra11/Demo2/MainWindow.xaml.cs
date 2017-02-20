@@ -51,9 +51,10 @@ namespace Demo {
 		/// <param name="e"></param>
 		private void btnBind_Click(object sender, RoutedEventArgs e)
 		{
-			//HockeyTeam team = new HockeyTeam("KeuPa", "Keuruu");
-			//spRight.DataContext = team;
-			spRight.DataContext = teams[counter];
+			HockeyTeam team = new HockeyTeam("KeuPa", "Keuruu");
+			spRight.DataContext = team;
+			//spRight.DataContext = teams[counter];
+
 		}
 	}
 }
