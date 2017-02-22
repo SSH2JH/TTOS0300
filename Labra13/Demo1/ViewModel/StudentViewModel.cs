@@ -27,7 +27,7 @@ namespace Demo1.ViewModel {
 				ObservableCollection<Student> students = new ObservableCollection<Student>();
 				//luodaan yhteys labranetin mysql-palvelimelle
 				string connStr = GetMysqlConnectionString();
-				string sql = "SELECT firstname, lastname, asioid FROM student";
+				string sql = "SELECT studentFname, studentLname, studentAsioId FROM student";
 				using (MySqlConnection conn = new MySqlConnection(connStr)) {
 					conn.Open();
 					using (MySqlCommand cmd = new MySqlCommand(sql, conn))
@@ -36,6 +36,7 @@ namespace Demo1.ViewModel {
 							Demo1.Model.Student s = new Model.Student();
 							s.FirstName = reader.GetString(0);
 							s.LastName = reader.GetString(1);
+							s.AsioId = reader.GetString(2);
 							students.Add(s);
 						}
 						Students = students;
@@ -47,9 +48,15 @@ namespace Demo1.ViewModel {
 		}
 		private string GetMysqlConnectionString()
 		{
-			string pw = "ei tieda";
-			string un = "ei tieda";
-			return string.Format("Data source=mysql.labranet.jamk.fi;Initial Catalog=K8960_1;user={0};password={1}", un, pw);
+			try {
+				// Haetaan tunnukset appconf
+				string pw = Demo1.Properties.Settings.Default.passwd;
+				string un = Demo1.Properties.Settings.Default.username;
+				string server = Demo1.Properties.Settings.Default.server;
+				return string.Format("Data source={0};Initial Catalog=K8960_1;user={1};password={2}", server, un, pw);
+			} catch {
+				throw;
+			}
 		}
 	}
 }
